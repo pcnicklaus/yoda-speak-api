@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yoda">
+
+<head>
+    <meta charset="utf-8">
+    <title>Yoda Speakin'</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body ng-controller="yodaController">
+
+    <div class="container">
+
+        <h1>Wanna sound like Yoda?</h1>
+
+        <br>
+
+        <form>
+            <div class="form-gro" id="inputText" class=up ">
+          <input type="text "form-control" placeholder="Enter text for yoda-fication..." ng-model="yoda.me">
+            </div>
+            <div class="form-group">
+                <input type="submit" id="search-submit" class="btn btn-default" value="search" ng-click="getTranslation()">
+            </div>
+        </form>
+
+        <p>The translated Yoda speak is: <strong><span class="query"></span></strong></p>
+
+        <hr>
+
+        <div class="results-area" id="yodaTranslation">
+            <h3>{{yodaData}}<h3>
+        <h4>{{yodaData}}</h4>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
